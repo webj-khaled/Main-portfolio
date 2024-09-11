@@ -68,7 +68,7 @@ export const PROJECTS = [
     image: project3,
     description: "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    github: "https://github.com/yourusername/portfolio-website"
+    github: "https://github.com/webj-khaled/Main-portfolio"
   },
   {
     title: "Automated Email Processing System",
