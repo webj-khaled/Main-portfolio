@@ -1,4 +1,4 @@
-import profilepic from "../assets/kevinRushProfile.jpg";
+import profilepic from "../assets/kevinRushProfile.jpeg";
 import {HERO_CONTENT} from "../constants"
 import { motion } from "framer-motion"
 

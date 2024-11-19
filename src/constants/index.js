@@ -17,9 +17,9 @@ export const EXPERIENCES = [
     technologies: ["Python", "Pytorch", "Scikit-learn", "Panadas"],
   },
   {
-    year: "01/2022 - 07/2022",
+    year: "01/2022 - 09/2022",
     role: "Data Analyst",
-    company: "Habitat Co., Brazil",
+    company: "Berlitz-brazil, Brazil",
     description: `Analyzed commercial and customer activity data from over 1000+ records, leading to 
 actionable insights that improved marketing strategy, resulting in a 10% increase in customer engagement. Led data collection and cleansing efforts, processing and standardizing 10,000+ data points 
 weekly to enhance accuracy for predictive models, improving model reliability by 15%. Developed and implemented a technical solution roadmap that reduced noise in sales data

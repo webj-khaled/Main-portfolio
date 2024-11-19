@@ -26,7 +26,7 @@ const Technologies = () => {
         <h2 className="my-20 text-center text-4xl">Technologies</h2>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <motion.div
-            variants={iconVariants(0.5)}
+            variants={iconVariants(1.5)}
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4 text-center"
@@ -86,7 +86,7 @@ const Technologies = () => {
           </motion.div>
 
           <motion.div
-            variants={iconVariants(0.5)}
+            variants={iconVariants(1.5)}
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4 text-center"
