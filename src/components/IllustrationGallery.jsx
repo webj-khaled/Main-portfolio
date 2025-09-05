@@ -3,21 +3,47 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 // Import your images (replace with your actual imports)
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
-import project5 from "../assets/projects/project-5.jpg";
-import project6 from "../assets/projects/project-6.jpg";
+import a from "../assets/designs/1.png";
+import b from "../assets/designs/2.png";
+import c from "../assets/designs/3.png";
+import d from "../assets/designs/4.png";
+import e from "../assets/designs/5.png";
+import f from "../assets/designs/6.png";      
+import g from "../assets/designs/7.png";
+import h from "../assets/designs/8.png";
+import i from "../assets/designs/9.png";
+import j from "../assets/designs/10.png";
+import k from "../assets/designs/11.png";
+import l from "../assets/designs/12.png";
+import m from "../assets/designs/13.png";
+import n from "../assets/designs/14.png";
+import o from "../assets/designs/15.png";
+import p from "../assets/designs/16.png";
+import q from "../assets/designs/17.png";
+import r from "../assets/designs/18.png";
+
+
 
 const IllustrationGallery = () => {
   const [images, setImages] = useState([
-    { id: 1, src: project1, title: 'Design 1' },
-    { id: 2, src: project2, title: 'Design 2' },
-    { id: 3, src: project3, title: 'Design 3' },
-    { id: 4, src: project4, title: 'Design 4' },
-    { id: 5, src: project5, title: 'Design 5' },
-    { id: 6, src: project6, title: 'Design 6' },
+    { id: 1, src: a, title: 'Design 1' },
+    { id: 2, src: b, title: 'Design 2' },
+    { id: 3, src: c, title: 'Design 3' },
+    { id: 4, src: d, title: 'Design 4' },
+    { id: 5, src: e, title: 'Design 5' },
+    { id: 6, src: f, title: 'Design 6' },
+    { id: 7, src: g, title: 'Design 7' },
+    { id: 8, src: h, title: 'Design 8' },
+    { id: 9, src: i, title: 'Design 9' },
+    { id: 10, src: j, title: 'Design 10' },
+    { id: 11, src: k, title: 'Design 11' },
+    { id: 12, src: l, title: 'Design 12' },
+    { id: 13, src: m, title: 'Design 13' },
+    { id: 14, src: n, title: 'Design 14' },
+    { id: 15, src: o, title: 'Design 15' },
+    { id: 16, src: p, title: 'Design 16' },
+    { id: 17, src: q, title: 'Design 17' },
+    { id: 18, src: r, title: 'Design 18' },
   ]);
   
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -146,10 +172,11 @@ const IllustrationGallery = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed drop-shadow-md"
           >
-            I am also a part-time scientific designer & illustrator. My designs are used as educational material in classes and courses lectured at{" "}
+            I am also a scientific designer & illustrator. My designs are used as educational material in biology classes and courses lectured at{" "}
             <span className="font-bold bg-gradient-to-r from-amber-300 to-amber-400 bg-clip-text text-transparent drop-shadow-md">
               University of Salzburg
-            </span>.
+            </span>. Here are some.
+            
           </motion.p>
         </div>
         
