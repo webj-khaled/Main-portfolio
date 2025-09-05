@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar";  // Ensure this import matches the correct case
 import Hero from "./components/hero"; // Adjust the path if necessary
+import About from "./components/about"; // Adjust the path if necessary
 import Technologies from "./components/technologies"; // Adjust the path if necessary
 import Experience from "./components/experience"; // Adjust the path if necessary
 import Project from "./components/project"; // Adjust the path if necessary
@@ -16,6 +17,7 @@ const App = () => {
       <div className="container mx-auto px-8">
         <Navbar />
         <Hero />
+        <About />
         <Technologies/>
         <Project/>
         <IllustrationGallery/>

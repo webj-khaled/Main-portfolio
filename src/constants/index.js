@@ -2,24 +2,14 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
-import project5 from "../assets/projects/project-5.jpg";
-import project6 from "../assets/projects/project-6.jpg";
 
-export const HERO_CONTENT = `I am a bioinformatician and machine learning enthusiast with experience in web & mobile app development and data analysis. Throughout my academic journey, I have developed expertise in handling large datasets and building predictive models using tools like Python and PyTorch. My focus is on utilizing machine learning techniques to solve complex problems in healthcare and biomedical research. I am driven by a desire to apply these skills to advance research and drive meaningful outcomes in both healthcare and business settings.`;
+export const HERO_CONTENT = `I am a dedicated bioinformatician and machine learning enthusiast with experience in computational research and data analysis. Throughout my academic journey, I have developed expertise in handling large datasets and building predictive models using tools like Python and PyTorch. My focus is on utilizing machine learning techniques to solve complex problems in healthcare and biomedical research. I am driven by a desire to apply these skills to advance research and drive meaningful outcomes in both healthcare and business settings.`;
 
 export const ABOUT_TEXT = `As a Biomedical Engineering graduate and a Medical Biology master's student, I have a solid foundation in bioinformatics, data analysis, and computational research. I have experience working with large datasets and have contributed to various research initiatives in the biomedical domain. My skills include developing algorithms, visualizing data, and solving problems collaboratively through internships and academic projects. I am known for clear communication and effective teamwork, with a strong interest in using machine learning to solve complex challenges and improve healthcare or business outcomes.`;
 
 export const EXPERIENCES = [
   {
-  year: "11/2024 - Present",
-  role: "Full-Stack Developer & Scientific Designer",
-  company: "University of Salzburg & self-employed",
-  description: `Develop full-stack web and mobile applications while building AI models for biological data analysis. Create scientific illustrations and designs used as educational materials in university courses. Specialize in translating complex biological concepts into visual learning tools and computational solutions.`,
-  technologies: ["Python", "PyTorch", "React", "React Native", "Supabase", "Node.js"],
-},
-  
-  {
-    year: "06/2024 - 09/2024",
+    year: "06/2024 - Present",
     role: "AI Specialist & Bioinformatician",
     company: "University of Salzburg",
     description: `Led the development and implementation of machine learning models to analyze large-scale genomic datasets, resulting in the identification of potential mutations. Collaborated with cross-functional teams to integrate biological data with computational models, enhancing predictive accuracy by 20%.
@@ -59,38 +49,6 @@ that supported 20% improvement in clinical decision-making processes.`,
 ];
 
 export const PROJECTS = [
-  {
-  title: "ESN Card Online Store",
-  image: project3,
-  description: "An e-commerce platform for selling ESN (Erasmus Student Network) cards to international students. The website features product customization options, secure payment processing, and automatic digital card delivery. Includes admin dashboard for order management and analytics.",
-  technologies: ["React", "Vite", "Stripe", "Supabase", "Tailwind CSS"],
-  github: "https://github.com/webj-khaled/ESN-Card-Store"
-},
-{
-  title: "Munich Trip Registration Portal",
-  image: project4,
-  description: "A registration and payment portal for organized trips to Munich. Features event creation, participant registration, payment processing, and automatic confirmation emails. Includes admin panel for managing participants, generating reports, and tracking payments.",
-  technologies: ["React", "Vite", "Stripe", "Supabase", "Node.js"],
-  github: "https://github.com/webj-khaled/Munich-Trip-Portal"
-},
-  
-  
-  {
-  title: "FilmFlow - Movie Discovery App",
-  image: project5,
-  description: "A React Native movie discovery application that allows users to browse trending movies, view details, watch trailers, and create personalized watchlists. Features user authentication, movie recommendations based on viewing history, and integration with movie databases for up-to-date content.",
-  technologies: ["React Native", "Tailwind CSS", "Supabase", "Appwrite", "Stripe"],
-  github: "https://github.com/webj-khaled/FilmFlow-Movie-App"
-},
-{
-  title: "TasteBuds - Food Delivery App",
-  image: project6,
-  description: "A food delivery application built with React Native that connects users with local restaurants. Features include menu browsing, customized orders, real-time order tracking, secure payments, and restaurant ratings. Users can save favorite orders and restaurants for quick reordering.",
-  technologies: ["React Native", "Tailwind CSS", "Supabase", "Appwrite", "Stripe"],
-  github: "https://github.com/webj-khaled/TasteBuds-Food-App"
-},
-  
-  
   {
     title: "Protein Mutations Predictor",
     image: project1,

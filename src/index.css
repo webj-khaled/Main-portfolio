@@ -7,9 +7,3 @@
 :root {
   font-family: "inter", sans-serif;
 }
-
-/* Ensure proper spacing for fixed navbar */
-body {
-  padding-top: 100px; /* Adjust based on your navbar height */
-}
-

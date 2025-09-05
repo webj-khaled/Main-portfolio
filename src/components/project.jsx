@@ -42,7 +42,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full hover:bg-purple-800"
                   >
-                    View Code or site
+                    View Code
                   </a>
                 </motion.div>
               </div>

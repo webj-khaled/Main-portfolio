@@ -1,26 +1,31 @@
+import logo from "../assets/kevinRushLogo.png";
 import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import AtomAnimation from "./AtomAnimation";
 
 const Navbar = () => {
   return ( 
-    <nav className="sticky top-0 z-50 flex items-center justify-between py-4 bg-transparent backdrop-blur-sm px-8">
-      {/* Logo on the left with more spacing */}
-      <div className="flex items-center h-16 ml-4">
-        <div className="w-24 h-24 flex items-center justify-center">
-          <AtomAnimation />
-        </div>
+    <nav className="mb-6 flex items-center justify-between py-6">
+      <div className="flex flex-shrink-0 items-center">
+        <img className="mx-2 w-[200px] h-[200px]" src={logo} alt="logo" />
       </div>
-      
-      {/* Social icons on the right with more spacing */}
-      <div className="flex items-center h-16 gap-6 mr-6">
+      <div className="m-8 flex items-center justify-center gap-4">
         {/* LinkedIn */}
-        <a href="https://www.linkedin.com/in/khaled-elfaham/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-all duration-300 transform hover:scale-110">
-          <FaLinkedin size={32} />
+        <a href="https://www.linkedin.com/in/khaled-elfaham/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+          <FaLinkedin size={30} />
+        </a>
+        {/* GitHub */}
+        <a href="https://github.com/webj-khaled" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">
+          <FaGithub size={30} />
         </a>
         {/* Instagram */}
-        <a href="https://www.instagram.com/khaledmnms/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-400 transition-all duration-300 transform hover:scale-110">
-          <FaInstagram size={32} />
+        <a href="https://www.instagram.com/khaledmnms/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
+          <FaInstagram size={30} />
+        </a>
+        {/* Twitter/X */}
+        <a href="https://x.com/khaledelfaham52" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+          <FaSquareXTwitter size={30} />
         </a>
       </div>
     </nav>
