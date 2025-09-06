@@ -4,6 +4,9 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
+import project7 from "../assets/projects/project-7.png";
+import project8 from "../assets/projects/project-8.png";
+
 
 export const HERO_CONTENT = `I am a bioinformatician and machine learning enthusiast with experience in web & mobile app development and data analysis. Throughout my academic journey, I have developed expertise in handling large datasets and building predictive models using tools like Python and PyTorch. My focus is on utilizing machine learning techniques to solve complex problems in healthcare and biomedical research. I am driven by a desire to apply these skills to advance research and drive meaningful outcomes in both healthcare and business settings.`;
 
@@ -38,20 +41,8 @@ weekly to enhance accuracy for predictive models, improving model reliability by
     technologies: ["PostgreSQL", "Python", "Matplotlib", "PowerBi"],
   },
   {
-    year: "09/2021 - 09/2022",
-    role: "Medical Engineer",
-    company: "Medical Park Istanbul",
-    description: `Maintaining project timelines for maintenance and quality control, ensuring 
-98% uptime of medical devices, which led to 0% critical device failures over a 12-month period.
-Analyzed market research data to support purchasing decisions, resulting in the acquisition
-of 10 new medical devices that enhanced operational efficiency by 15%.
-Created and presented over 50 medical reports per quarter, providing key insights 
-that supported 20% improvement in clinical decision-making processes.`,
-    technologies: ["Medical device trouble-shooting", "Endoscopy Devices", "ISO 13485", "ISO 9001"],
-  },
-  {
     year: "05/2018 - 10/2018",
-    role: "Medical Engineer",
+    role: "Intern Medical Engineer",
     company: "Cairo General Hospital",
     description: `Designed and executed medical devices preventative maintenance plans. Calibrated and maintained incubators, patient monitors, and ventilators.`,
     technologies: ["Medical device trouble-shooting", "ECG", "Ventilators", "ISO 27001"],
@@ -61,17 +52,17 @@ that supported 20% improvement in clinical decision-making processes.`,
 export const PROJECTS = [
   {
   title: "ESN Card Online Store",
-  image: project3,
-  description: "An e-commerce platform for selling ESN (Erasmus Student Network) cards to international students. The website features product customization options, secure payment processing, and automatic digital card delivery. Includes admin dashboard for order management and analytics.",
+  image: project8,
+  description: "An e-commerce platform for selling ESN (Erasmus Student Network) cards to international students. The website features product customization options, secure payment processing, and automatic digital card delivery. Includes admin dashboard for order management and analytics. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
   technologies: ["React", "Vite", "Stripe", "Supabase", "Tailwind CSS"],
-  github: "https://github.com/webj-khaled/ESN-Card-Store"
+  github: "https://esn-salzburg.netlify.app/"
 },
 {
   title: "Munich Trip Registration Portal",
-  image: project4,
-  description: "A registration and payment portal for organized trips to Munich. Features event creation, participant registration, payment processing, and automatic confirmation emails. Includes admin panel for managing participants, generating reports, and tracking payments.",
+  image: project7,
+  description: "A registration and payment portal for organized trips to Munich. Features event creation, participant registration, payment processing, and automatic confirmation emails. Includes admin panel for managing participants, generating reports, and tracking payments. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
   technologies: ["React", "Vite", "Stripe", "Supabase", "Node.js"],
-  github: "https://github.com/webj-khaled/Munich-Trip-Portal"
+  github: "https://esn-salzburg-munich-trip.netlify.app/"
 },
   
   
@@ -80,12 +71,12 @@ export const PROJECTS = [
   image: project5,
   description: "A React Native movie discovery application that allows users to browse trending movies, view details, watch trailers, and create personalized watchlists. Features user authentication, movie recommendations based on viewing history, and integration with movie databases for up-to-date content.",
   technologies: ["React Native", "Tailwind CSS", "Supabase", "Appwrite", "Stripe"],
-  github: "https://github.com/webj-khaled/FilmFlow-Movie-App"
+  github: "https://github.com/webj-khaled/MOvie-app"
 },
 {
   title: "TasteBuds - Food Delivery App",
   image: project6,
-  description: "A food delivery application built with React Native that connects users with local restaurants. Features include menu browsing, customized orders, real-time order tracking, secure payments, and restaurant ratings. Users can save favorite orders and restaurants for quick reordering.",
+  description: "A food delivery application built with React Native that connects users with local restaurants. Features include menu browsing, customized orders, real-time order tracking, secure payments, and restaurant ratings. Users can save favorite orders and restaurants for quick reordering. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
   technologies: ["React Native", "Tailwind CSS", "Supabase", "Appwrite", "Stripe"],
   github: "https://github.com/webj-khaled/TasteBuds-Food-App"
 },
