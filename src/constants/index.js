@@ -6,7 +6,8 @@ import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.png";
 import project8 from "../assets/projects/project-8.png";
-
+import project9 from "../assets/projects/project-9.png";
+import project10 from "../assets/projects/project-10.png";
 
 export const HERO_CONTENT = `I am a bioinformatician and machine learning enthusiast with experience in web & mobile app development and data analysis. Throughout my academic journey, I have developed expertise in handling large datasets and building predictive models using tools like Python and PyTorch. My focus is on utilizing machine learning techniques to solve complex problems in healthcare and biomedical research. I am driven by a desire to apply these skills to advance research and drive meaningful outcomes in both healthcare and business settings.`;
 
@@ -14,13 +15,13 @@ export const ABOUT_TEXT = `As a Biomedical Engineering graduate and a Medical Bi
 
 export const EXPERIENCES = [
   {
-  year: "11/2024 - Present",
-  role: "Full-Stack Developer & Scientific Designer",
-  company: "University of Salzburg & self-employed",
-  description: `Develop full-stack web and mobile applications while building AI models for biological data analysis. Create scientific illustrations and designs used as educational materials in university courses. Specialize in translating complex biological concepts into visual learning tools and computational solutions.`,
-  technologies: ["Python", "PyTorch", "React", "React Native", "Supabase", "Node.js"],
-},
-  
+    year: "11/2024 - Present",
+    role: "Full-Stack Developer & Scientific Designer",
+    company: "University of Salzburg & self-employed",
+    description: `Develop full-stack web and mobile applications while building AI models for biological data analysis. Create scientific illustrations and designs used as educational materials in university courses. Specialize in translating complex biological concepts into visual learning tools and computational solutions.`,
+    technologies: ["Python", "PyTorch", "React", "React Native", "Supabase", "Node.js"],
+  },
+
   {
     year: "06/2024 - 09/2024",
     role: "AI Specialist & Bioinformatician",
@@ -51,37 +52,53 @@ weekly to enhance accuracy for predictive models, improving model reliability by
 
 export const PROJECTS = [
   {
-  title: "ESN Card Online Store",
-  image: project8,
-  description: "An e-commerce platform for selling ESN (Erasmus Student Network) cards to international students. The website features product customization options, secure payment processing, and automatic digital card delivery. Includes admin dashboard for order management and analytics. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
-  technologies: ["React", "Vite", "Stripe", "Supabase", "Tailwind CSS"],
-  github: "https://esn-salzburg.netlify.app/"
-},
-{
-  title: "Munich Trip Registration Portal",
-  image: project7,
-  description: "A registration and payment portal for organized trips to Munich. Features event creation, participant registration, payment processing, and automatic confirmation emails. Includes admin panel for managing participants, generating reports, and tracking payments. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
-  technologies: ["React", "Vite", "Stripe", "Supabase", "Node.js"],
-  github: "https://esn-salzburg-munich-trip.netlify.app/"
-},
-  
-  
+    title: "ESN Salzburg Budapest Trip Registration Portal",
+    image: project10,
+    description:
+      "Trip registration and payment portal for ESN Salzburg/Vienna winter trip to Budapest (Dec 5–7, 2025). Includes itinerary, what’s included, pricing, and Stripe checkout with ESN-card discount option. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
+    technologies: ["React", "Vite", "Stripe", "Supabase", "Tailwind CSS"],
+    github: "https://esn-salzburg-budapest-trip.netlify.app/",
+  },
   {
-  title: "FilmFlow - Movie Discovery App",
-  image: project5,
-  description: "A React Native movie discovery application that allows users to browse trending movies, view details, watch trailers, and create personalized watchlists. Features user authentication, movie recommendations based on viewing history, and integration with movie databases for up-to-date content.",
-  technologies: ["React Native", "Tailwind CSS", "Supabase", "Appwrite", "Stripe"],
-  github: "https://github.com/webj-khaled/MOvie-app"
-},
-{
-  title: "TasteBuds - Food Delivery App",
-  image: project6,
-  description: "A food delivery application built with React Native that connects users with local restaurants. Features include menu browsing, customized orders, real-time order tracking, secure payments, and restaurant ratings. Users can save favorite orders and restaurants for quick reordering. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
-  technologies: ["React Native", "Tailwind CSS", "Supabase", "Appwrite", "Stripe"],
-  github: "https://github.com/webj-khaled/TasteBuds-Food-App"
-},
-  
-  
+    title: "ESN Salzburg FC26 FIFA Tournament Registration",
+    image: project9,
+    description:
+      "Landing + registration page for ESN Salzburg FC26 tournament. Includes event info (date/time/location), rules, prize details, and Stripe checkout with ESN-card discount option (5€ vs 10€). CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
+    technologies: ["React", "Vite", "Stripe", "Supabase", "Tailwind CSS"],
+    github: "https://esn-salzburg-fc26.netlify.app/",
+  },
+  {
+    title: "ESN Card Online Store",
+    image: project8,
+    description: "An e-commerce platform for selling ESN (Erasmus Student Network) cards to international students. The website features product customization options, secure payment processing, and automatic digital card delivery. Includes admin dashboard for order management and analytics. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
+    technologies: ["React", "Vite", "Stripe", "Supabase", "Tailwind CSS"],
+    github: "https://esn-salzburg.netlify.app/"
+  },
+  {
+    title: "Munich Trip Registration Portal",
+    image: project7,
+    description: "A registration and payment portal for organized trips to Munich. Features event creation, participant registration, payment processing, and automatic confirmation emails. Includes admin panel for managing participants, generating reports, and tracking payments. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
+    technologies: ["React", "Vite", "Stripe", "Supabase", "Node.js"],
+    github: "https://esn-salzburg-munich-trip.netlify.app/"
+  },
+
+
+  {
+    title: "FilmFlow - Movie Discovery App",
+    image: project5,
+    description: "A React Native movie discovery application that allows users to browse trending movies, view details, watch trailers, and create personalized watchlists. Features user authentication, movie recommendations based on viewing history, and integration with movie databases for up-to-date content.",
+    technologies: ["React Native", "Tailwind CSS", "Supabase", "Appwrite", "Stripe"],
+    github: "https://github.com/webj-khaled/MOvie-app"
+  },
+  {
+    title: "TasteBuds - Food Delivery App",
+    image: project6,
+    description: "A food delivery application built with React Native that connects users with local restaurants. Features include menu browsing, customized orders, real-time order tracking, secure payments, and restaurant ratings. Users can save favorite orders and restaurants for quick reordering. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
+    technologies: ["React Native", "Tailwind CSS", "Supabase", "Appwrite", "Stripe"],
+    github: "https://github.com/webj-khaled/TasteBuds-Food-App"
+  },
+
+
   {
     title: "Protein Mutations Predictor",
     image: project1,
