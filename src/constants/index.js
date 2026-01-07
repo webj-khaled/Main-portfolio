@@ -8,6 +8,8 @@ import project7 from "../assets/projects/project-7.png";
 import project8 from "../assets/projects/project-8.png";
 import project9 from "../assets/projects/project-9.png";
 import project10 from "../assets/projects/project-10.png";
+import project11 from "../assets/projects/project-11.png";
+
 
 export const HERO_CONTENT = `I am a bioinformatician and machine learning enthusiast with experience in web & mobile app development and data analysis. Throughout my academic journey, I have developed expertise in handling large datasets and building predictive models using tools like Python and PyTorch. My focus is on utilizing machine learning techniques to solve complex problems in healthcare and biomedical research. I am driven by a desire to apply these skills to advance research and drive meaningful outcomes in both healthcare and business settings.`;
 
@@ -51,6 +53,23 @@ weekly to enhance accuracy for predictive models, improving model reliability by
 ];
 
 export const PROJECTS = [
+  {
+    title: "Shopping – E-Commerce Platform for seller and buyers (Under Development)",
+    image: project11,
+    description:
+      "Full-stack e-commerce platform built as a production project. Features user authentication, product management, image uploads, Stripe checkout, real-time updates, and order handling. Currently under active development and will be deployed later.",
+    technologies: [
+      "Next.js",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "Stripe",
+      "AWS",
+      "Tailwind CSS"
+    ],
+    github: "https://github.com/webj-khaled/esn-shop-nestjs",
+  },
+
   {
     title: "ESN Salzburg Budapest Trip Registration Portal",
     image: project10,
