@@ -12,6 +12,9 @@ import {
   SiLaravel,
   SiMicrosoftazure,
   SiSelenium,
+  SiCaddy,
+  SiDocker,
+  SiUbuntu,
 } from "react-icons/si";
 import { FaPython, FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -50,6 +53,9 @@ const tech = [
   { name: "AWS", Icon: FaAws, color: "#FF9900", duration: 3.2 },
   { name: "Azure", Icon: SiMicrosoftazure, color: "#0078D4", duration: 3 },
   { name: "Selenium", Icon: SiSelenium, color: "#43B02A", duration: 2.2 },
+  { name: "Caddy", Icon: SiCaddy, color: "#1F88C0", duration: 2.4 },
+  { name: "Docker", Icon: SiDocker, color: "#2496ED", duration: 2.6 },
+  { name: "Ubuntu", Icon: SiUbuntu, color: "#E95420", duration: 2.7 },
 ];
 
 const Technologies = () => {
