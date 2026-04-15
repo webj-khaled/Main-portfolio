@@ -1,4 +1,4 @@
-import project1 from "../assets/projects/project-1.jpg";
+﻿import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
@@ -17,47 +17,43 @@ export const ABOUT_TEXT = `As a Biomedical Engineering graduate and a Medical Bi
 
 export const EXPERIENCES = [
   {
-    year: "11/2024 - Present",
-    role: "Full-Stack Developer & Scientific Designer",
-    company: "University of Salzburg & self-employed",
-    description: `Develop full-stack web and mobile applications while building AI models for biological data analysis. Create scientific illustrations and designs used as educational materials in university courses. Specialize in translating complex biological concepts into visual learning tools and computational solutions.`,
-    technologies: ["Python", "PyTorch", "React", "React Native", "Supabase", "Node.js"],
+    year: "03/2025 - 04/2026",
+    role: "Student Assistant",
+    company: "University of Salzburg",
+    description: `Worked as a student assistant in Medical Biology, creating detailed 3D structures and scientific illustrations using Adobe Illustrator and Blender. Developed didactic visuals for teaching that improved understanding of complex biological concepts. Collaborated closely with the professor, and the produced illustrations were successfully adopted as course materials.`,
+    technologies: ["Adobe Illustrator", "Blender", "3D Modeling", "Scientific Illustration"],
   },
 
   {
-    year: "06/2024 - 09/2024",
-    role: "AI Specialist & Bioinformatician",
+    year: "01/2025 - Present",
+    role: "Full-Stack Developer",
+    company: "Freelance",
+    description: `Built full-stack web and mobile applications for real client and event use cases, including authentication, admin dashboards, file uploads, and Stripe payments with React, Next.js, React Native, and Node.js/NestJS. Delivered end-to-end product workflows from requirements and data modeling to API design, debugging, testing, deployment, and cloud/service integrations (AWS, Azure, Supabase, Appwrite). Developed and integrated ML components in Python/PyTorch for data-driven features, including cell-type classification from gene expression data and protein mutation/stability prediction.`,
+    technologies: ["React", "Next.js", "React Native", "Node.js", "NestJS", "PostgreSQL", "Stripe", "AWS", "Azure", "Supabase", "Appwrite", "Python", "PyTorch"],
+  },
+
+  {
+    year: "06/2024 - 08/2024",
+    role: "Bioinformatics Intern",
     company: "University of Salzburg",
-    description: `Led the development and implementation of machine learning models to analyze large-scale genomic datasets, resulting in the identification of potential mutations. Collaborated with cross-functional teams to integrate biological data with computational models, enhancing predictive accuracy by 20%.
- Applied AI techniques to predict protein structures, significantly improving the speed and accuracy of predictions`,
-    technologies: ["Python", "Pytorch", "Scikit-learn", "Panadas"],
+    description: `Developed and implemented machine learning models with PyTorch and TensorFlow to analyze large-scale genomic datasets, identifying potential mutations with up to 95% accuracy. Collaborated with interdisciplinary teams to integrate biological data into computational models, improving predictive performance by 20%. Applied AI methods including neural networks and deep learning for protein structure prediction, increasing processing speed by 30% and accuracy by 25%.`,
+    technologies: ["Python", "PyTorch", "TensorFlow", "Deep Learning", "Bioinformatics"],
   },
   {
     year: "01/2022 - 09/2022",
     role: "Data Analyst",
-    company: "Berlitz-brazil, Brazil",
-    description: `Analyzed commercial and customer activity data from over 1000+ records, leading to 
-actionable insights that improved marketing strategy, resulting in a 10% increase in customer engagement. Led data collection and cleansing efforts, processing and standardizing 10,000+ data points 
-weekly to enhance accuracy for predictive models, improving model reliability by 15%. Developed and implemented a technical solution roadmap that reduced noise in sales data
- by 20%, leading to a 5% improvement in forecast accuracy. 
-`,
-    technologies: ["PostgreSQL", "Python", "Matplotlib", "PowerBi"],
-  },
-  {
-    year: "05/2018 - 10/2018",
-    role: "Intern Medical Engineer",
-    company: "Cairo General Hospital",
-    description: `Designed and executed medical devices preventative maintenance plans. Calibrated and maintained incubators, patient monitors, and ventilators.`,
-    technologies: ["Medical device trouble-shooting", "ECG", "Ventilators", "ISO 27001"],
+    company: "Berlitz, Sao Paulo, Brazil",
+    description: `Analyzed sales and customer datasets (1,000+ records) and produced actionable insights that improved marketing strategy and increased customer engagement by 10%. Led data collection, cleaning, and standardization of 10,000+ data points per week, improving model reliability by 15%. Built a technical improvement roadmap that reduced sales-data noise by 20% and improved forecasting accuracy by 5%.`,
+    technologies: ["Python", "PostgreSQL", "Matplotlib", "Power BI", "Data Analysis"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "Shopping – E-Commerce Platform for seller and buyers (Under Development)",
+    title: "ESN Salzburg Shop - Production E-Commerce Platform",
     image: project11,
     description:
-      "Full-stack e-commerce platform built as a production project. Features user authentication, product management, image uploads, Stripe checkout, real-time updates, and order handling. Currently under active development and will be deployed later.",
+      "Production e-commerce platform for ESN Salzburg merchandise with a Next.js storefront and NestJS API. Includes authentication and password recovery, color/size-aware cart flow, Stripe checkout with delivery metadata, customer/admin order history, and order-completion emails. Deployed with Docker Compose, PostgreSQL, and Caddy reverse proxy on shop.esnsalzburg.org.",
     technologies: [
       "Next.js",
       "NestJS",
@@ -67,14 +63,14 @@ export const PROJECTS = [
       "AWS",
       "Tailwind CSS"
     ],
-    github: "https://github.com/webj-khaled/esn-shop-nestjs",
+    github: "https://shop.esnsalzburg.org/",
   },
 
   {
     title: "ESN Salzburg Budapest Trip Registration Portal",
     image: project10,
     description:
-      "Trip registration and payment portal for ESN Salzburg/Vienna winter trip to Budapest (Dec 5–7, 2025). Includes itinerary, what’s included, pricing, and Stripe checkout with ESN-card discount option. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
+      "Trip registration and payment portal for a 3-day winter Budapest event (Dec 5-7, 2025). Includes full itinerary and inclusions, multi-step attendee form (personal/travel preferences), Stripe checkout with tiered pricing, and Supabase-backed registration storage with document upload. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
     technologies: ["React", "Vite", "Stripe", "Supabase", "Tailwind CSS"],
     github: "https://esn-salzburg-budapest-trip.netlify.app/",
   },
@@ -82,7 +78,7 @@ export const PROJECTS = [
     title: "ESN Salzburg FC26 FIFA Tournament Registration",
     image: project9,
     description:
-      "Landing + registration page for ESN Salzburg FC26 tournament. Includes event info (date/time/location), rules, prize details, and Stripe checkout with ESN-card discount option (5€ vs 10€). CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
+      "Landing and registration portal for an FC26 tournament, including event details, rule set, prize breakdown, and limited-slot signup flow. Features Stripe checkout with dual pricing (€5/€10), optional membership-card upload, and Supabase persistence for participant records. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
     technologies: ["React", "Vite", "Stripe", "Supabase", "Tailwind CSS"],
     github: "https://esn-salzburg-fc26.netlify.app/",
   },
@@ -91,7 +87,7 @@ export const PROJECTS = [
     image: project8,
     description: "An e-commerce platform for selling ESN (Erasmus Student Network) cards to international students. The website features product customization options, secure payment processing, and automatic digital card delivery. Includes admin dashboard for order management and analytics. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
     technologies: ["React", "Vite", "Stripe", "Supabase", "Tailwind CSS"],
-    github: "https://esn-salzburg.netlify.app/"
+    github: "https://card.esnsalzburg.org/"
   },
   {
     title: "Munich Trip Registration Portal",
@@ -154,3 +150,4 @@ export const CONTACT = {
   phoneNo: "+43 676 3817 666 ",
   email: "elfahamkhaled65@gmail.com",
 };
+
