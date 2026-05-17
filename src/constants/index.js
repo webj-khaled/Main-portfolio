@@ -9,6 +9,8 @@ import project8 from "../assets/projects/project-8.png";
 import project9 from "../assets/projects/project-9.png";
 import project10 from "../assets/projects/project-10.png";
 import project11 from "../assets/projects/project-11.png";
+import project12 from "../assets/projects/Project-12.png";
+import project13 from "../assets/projects/Project-13.png";
 
 
 export const HERO_CONTENT = `I am a bioinformatician and machine learning enthusiast with experience in web & mobile app development and data analysis. Throughout my academic journey, I have developed expertise in handling large datasets and building predictive models using tools like Python and PyTorch. My focus is on utilizing machine learning techniques to solve complex problems in healthcare and biomedical research. I am driven by a desire to apply these skills to advance research and drive meaningful outcomes in both healthcare and business settings.`;
@@ -49,6 +51,38 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "GNNv3 Online - AI/ML Prediction Workbench",
+    image: project13,
+    description:
+      "Online AI/ML workbench that turns a PyTorch FNN regression workflow into a deployed prediction tool. The interface lets users inspect the active model, prepare train/test commands, upload TSV or CSV feature data, run predictions through a FastAPI backend, preview outputs, and download prediction results. Deployed with Next.js, FastAPI, ONNX Runtime, Docker Compose, and Caddy on live.esnsalzburg.org.",
+    technologies: [
+      "Next.js",
+      "FastAPI",
+      "Python",
+      "PyTorch",
+      "ONNX Runtime",
+      "Docker",
+      "Caddy"
+    ],
+    github: "https://live.esnsalzburg.org/",
+  },
+  {
+    title: "Shopping List - Symfony Full-Stack Web App",
+    image: project12,
+    description:
+      "Full-stack shopping-list application with a Symfony 8 backend, Twig dashboard UI, MySQL database, and Docker deployment. Includes optional username sessions, public and private shopping lists, list and item CRUD, search and ownership filters, uploaded cover images, Turbo frame updates, Stimulus interactions, and REST API endpoints for assignment-style list management. Deployed on list.esnsalzburg.org.",
+    technologies: [
+      "Symfony",
+      "PHP",
+      "Twig",
+      "Doctrine",
+      "MySQL",
+      "Turbo",
+      "Docker"
+    ],
+    github: "https://list.esnsalzburg.org/",
+  },
   {
     title: "ESN Salzburg Shop - Production E-Commerce Platform",
     image: project11,
