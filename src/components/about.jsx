@@ -13,7 +13,7 @@ const About = () => {
         </div>
         <div className="border-y border-[var(--color-line)] py-8">
           <p className="display-type text-3xl font-black leading-tight sm:text-5xl">
-            I create the interface, the backend, the model workflow, and the visual explanation.
+            I create the interface, the backend, the model workflow, and the animation.
           </p>
           <p className="mt-6 text-lg leading-8 text-muted">
             I work across product decisions, implementation details, and final delivery.

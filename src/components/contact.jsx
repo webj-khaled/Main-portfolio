@@ -15,7 +15,7 @@ const Contact = () => {
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
             <div>
               <span className="section-kicker">Contact</span>
-              <h2 className="section-title">Tell me what needs to work.</h2>
+              <h2 className="section-title">Let’s make the next idea real.</h2>
               <p className="section-copy mt-7">
                 I am open to full-stack roles, freelance product work, AI-enabled workflows, and collaborations where technical depth and creative execution both matter.
               </p>
