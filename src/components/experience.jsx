@@ -1,47 +1,52 @@
-import {EXPERIENCES} from "../constants"
 import { motion } from "framer-motion";
+import { EXPERIENCES } from "../constants";
 
 const Experience = () => {
-    return (
-      <div className="border-b border-neutral-900 pb-4">
-        <h2 className="my-20 text-center text-4xl">Experience</h2>
-        <div>
+  return (
+    <section id="experience" className="section-pad border-b border-[var(--color-line)]">
+      <div className="section-shell">
+        <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+          <div>
+            <span className="section-kicker">Experiences</span>
+            <h2 className="section-title">Experiences</h2>
+          </div>
+        </div>
+
+        <div className="mt-12">
           {EXPERIENCES.map((experience, index) => (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
-                transition={{ duration: 1 }}
-                className="w-full lg:w-1/4"
-              >
-                <p className="mb-2 text-sm text-neutral-400">
-                  {experience.year}
-                </p>
-              </motion.div>
-              <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4">
-                <h6 className="mb-2 font-semibold">
-                  {experience.role}{" "}
-                  <span className="text-sm text-purple-100">
-                    | {experience.company}
-                  </span>
-                </h6>
-                <p className="mb-4 text-neutral-400">{experience.description}</p>
-                {experience.technologies.map((tech, index) => (
-                  <span key={index} className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800">
-                    {tech}
-                  </span>
-                ))}
-              </motion.div>
-            </div>
+            <motion.article
+              key={`${experience.year}-${experience.role}`}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.55, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
+              className="grid gap-5 border-t border-[var(--color-line)] py-7 lg:grid-cols-[0.28fr_0.72fr]"
+            >
+              <div>
+                <p className="display-type text-2xl font-black accent-amber">{String(index + 1).padStart(2, "0")}</p>
+                <p className="mt-2 text-sm font-bold uppercase tracking-[0.12em] text-soft">{experience.year}</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-black">
+                  {experience.role}
+                  <span className="block pt-1 text-base font-bold text-muted">{experience.company}</span>
+                </h3>
+                <p className="mt-5 max-w-4xl leading-8 text-muted">{experience.description}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {experience.technologies.map((tech) => (
+                    <span key={tech} className="border border-[var(--color-line)] px-2.5 py-1 text-xs font-bold uppercase tracking-[0.08em] accent-cyan">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </motion.article>
           ))}
         </div>
       </div>
-    );
-  };
-  
-  export default Experience;
-  
+    </section>
+  );
+};
+
+export default Experience;

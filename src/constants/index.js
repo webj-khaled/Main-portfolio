@@ -13,9 +13,9 @@ import project12 from "../assets/projects/Project-12.png";
 import project13 from "../assets/projects/Project-13.png";
 
 
-export const HERO_CONTENT = `I am a bioinformatician and machine learning enthusiast with experience in web & mobile app development and data analysis. Throughout my academic journey, I have developed expertise in handling large datasets and building predictive models using tools like Python and PyTorch. My focus is on utilizing machine learning techniques to solve complex problems in healthcare and biomedical research. I am driven by a desire to apply these skills to advance research and drive meaningful outcomes in both healthcare and business settings.`;
+export const HERO_CONTENT = `I create full-stack products, AI workflows, and scientific visuals that turn complex ideas into usable systems. My work sits where product engineering, biomedical science, machine learning, and creative execution meet.`;
 
-export const ABOUT_TEXT = `As a Biomedical Engineering graduate and a Medical Biology master's student, I have a solid foundation in bioinformatics, data analysis, and computational research. I have experience working with large datasets and have contributed to various research initiatives in the biomedical domain. My skills include developing algorithms, visualizing data, and solving problems collaboratively through internships and academic projects. I am known for clear communication and effective teamwork, with a strong interest in using machine learning to solve complex challenges and improve healthcare or business outcomes.`;
+export const ABOUT_TEXT = `My background connects Biomedical Engineering, Medical Biology, full-stack development, AI/ML, bioinformatics, and scientific visualization. I look for projects where the interface, the data, and the real-world decision all have to fit together.`;
 
 export const EXPERIENCES = [
   {
@@ -30,7 +30,7 @@ export const EXPERIENCES = [
     year: "01/2025 - Present",
     role: "Full-Stack Developer",
     company: "Freelance",
-    description: `Built full-stack web and mobile applications for real client and event use cases, including authentication, admin dashboards, file uploads, and Stripe payments with React, Next.js, React Native, and Node.js/NestJS. Delivered end-to-end product workflows from requirements and data modeling to API design, debugging, testing, deployment, and cloud/service integrations (AWS, Azure, Supabase, Appwrite). Developed and integrated ML components in Python/PyTorch for data-driven features, including cell-type classification from gene expression data and protein mutation/stability prediction.`,
+    description: `Created full-stack web and mobile applications for real client and event use cases, including authentication, admin dashboards, file uploads, and Stripe payments with React, Next.js, React Native, and Node.js/NestJS. Delivered end-to-end product workflows from requirements and data modeling to API design, debugging, testing, deployment, and cloud/service integrations (AWS, Azure, Supabase, Appwrite). Developed and integrated ML components in Python/PyTorch for data-driven features, including cell-type classification from gene expression data and protein mutation/stability prediction.`,
     technologies: ["React", "Next.js", "React Native", "Node.js", "NestJS", "PostgreSQL", "Stripe", "AWS", "Azure", "Supabase", "Appwrite", "Python", "PyTorch"],
   },
 
@@ -45,7 +45,7 @@ export const EXPERIENCES = [
     year: "01/2022 - 09/2022",
     role: "Data Analyst",
     company: "Berlitz, Sao Paulo, Brazil",
-    description: `Analyzed sales and customer datasets (1,000+ records) and produced actionable insights that improved marketing strategy and increased customer engagement by 10%. Led data collection, cleaning, and standardization of 10,000+ data points per week, improving model reliability by 15%. Built a technical improvement roadmap that reduced sales-data noise by 20% and improved forecasting accuracy by 5%.`,
+    description: `Analyzed sales and customer datasets (1,000+ records) and produced actionable insights that improved marketing strategy and increased customer engagement by 10%. Led data collection, cleaning, and standardization of 10,000+ data points per week, improving model reliability by 15%. Created a technical improvement roadmap that reduced sales-data noise by 20% and improved forecasting accuracy by 5%.`,
     technologies: ["Python", "PostgreSQL", "Matplotlib", "Power BI", "Data Analysis"],
   },
 ];
@@ -142,7 +142,7 @@ export const PROJECTS = [
   {
     title: "TasteBuds - Food Delivery App",
     image: project6,
-    description: "A food delivery application built with React Native that connects users with local restaurants. Features include menu browsing, customized orders, real-time order tracking, secure payments, and restaurant ratings. Users can save favorite orders and restaurants for quick reordering. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
+    description: "A food delivery application made with React Native that connects users with local restaurants. Features include menu browsing, customized orders, real-time order tracking, secure payments, and restaurant ratings. Users can save favorite orders and restaurants for quick reordering. CODE IS CONFIDENTIAL, AVAILABLE UPON REQUEST.",
     technologies: ["React Native", "Tailwind CSS", "Supabase", "Appwrite", "Stripe"],
     github: "https://github.com/webj-khaled/TasteBuds-Food-App"
   },

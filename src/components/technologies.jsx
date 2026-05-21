@@ -1,91 +1,113 @@
-import { RiReactjsLine } from "react-icons/ri";
+import { motion } from "framer-motion";
 import {
-  SiNumpy,
-  SiPytorch,
-  SiPowerbi,
-  SiExpo,
-  SiSupabase,
-  SiNextdotjs,
-  SiStripe,
   SiAppwrite,
-  SiNestjs,
-  SiLaravel,
-  SiMicrosoftazure,
-  SiSelenium,
   SiCaddy,
   SiDocker,
+  SiExpo,
+  SiFastapi,
+  SiMicrosoftazure,
+  SiNestjs,
+  SiNextdotjs,
+  SiNumpy,
+  SiPowerbi,
+  SiPytorch,
+  SiSelenium,
+  SiStripe,
+  SiSupabase,
   SiUbuntu,
 } from "react-icons/si";
-import { FaPython, FaNodeJs } from "react-icons/fa";
+import { FaAws, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { motion } from "framer-motion";
-import { FaAws } from "react-icons/fa";
 
-const iconVariants = (duration = 1.2) => ({
-  initial: { y: 0 },
-  animate: {
-    y: [-8, 8],
-    transition: {
-      duration,
-      ease: "easeInOut",
-      repeat: Infinity,
-      repeatType: "reverse",
-    },
+const groups = [
+  {
+    title: "Interface and product",
+    copy: "Frontends, mobile apps, dashboards, payment flows, and admin tools.",
+    accent: "accent-cyan",
+    tools: [
+      { name: "React", Icon: FaReact },
+      { name: "Next.js", Icon: SiNextdotjs },
+      { name: "React Native", Icon: SiExpo },
+      { name: "Stripe", Icon: SiStripe },
+      { name: "Supabase", Icon: SiSupabase },
+      { name: "Appwrite", Icon: SiAppwrite },
+    ],
   },
-});
-
-
-const tech = [
-  { name: "React", Icon: RiReactjsLine, color: "#61DAFB", duration: 1.5 },
-  { name: "NumPy", Icon: SiNumpy, color: "#013243", duration: 1.5 },
-  { name: "PyTorch", Icon: SiPytorch, color: "#EE4C2C", duration: 2.5 },
-  { name: "Power BI", Icon: SiPowerbi, color: "#F2C811", duration: 4 },
-  { name: "Python", Icon: FaPython, color: "#3776AB", duration: 2.5 },
-  { name: "Node.js", Icon: FaNodeJs, color: "#68A063", duration: 1.5 },
-  { name: "NestJS", Icon: SiNestjs, color: "#E0234E", duration: 2 },
-  { name: "Laravel", Icon: SiLaravel, color: "#FF2D20", duration: 2.8 },
-  { name: "PostgreSQL", Icon: BiLogoPostgresql, color: "#336791", duration: 1.5 },
-  { name: "Expo", Icon: SiExpo, color: "#000020", duration: 2 },
-  { name: "Appwrite", Icon: SiAppwrite, color: "#F02E65", duration: 3 },
-  { name: "Supabase", Icon: SiSupabase, color: "#3ECF8E", duration: 2 },
-  { name: "Next.js", Icon: SiNextdotjs, color: "#FFFFFF", duration: 2 },
-  { name: "Stripe", Icon: SiStripe, color: "#635BFF", duration: 2.5 },
-  { name: "AWS", Icon: FaAws, color: "#FF9900", duration: 3.2 },
-  { name: "Azure", Icon: SiMicrosoftazure, color: "#0078D4", duration: 3 },
-  { name: "Selenium", Icon: SiSelenium, color: "#43B02A", duration: 2.2 },
-  { name: "Caddy", Icon: SiCaddy, color: "#1F88C0", duration: 2.4 },
-  { name: "Docker", Icon: SiDocker, color: "#2496ED", duration: 2.6 },
-  { name: "Ubuntu", Icon: SiUbuntu, color: "#E95420", duration: 2.7 },
+  {
+    title: "Systems and deployment",
+    copy: "APIs, databases, containers, reverse proxies, and production hosting.",
+    accent: "accent-green",
+    tools: [
+      { name: "Node.js", Icon: FaNodeJs },
+      { name: "NestJS", Icon: SiNestjs },
+      { name: "FastAPI", Icon: SiFastapi },
+      { name: "PostgreSQL", Icon: BiLogoPostgresql },
+      { name: "Docker", Icon: SiDocker },
+      { name: "Caddy", Icon: SiCaddy },
+      { name: "Ubuntu", Icon: SiUbuntu },
+    ],
+  },
+  {
+    title: "AI, data, and automation",
+    copy: "Prediction pipelines, biomedical datasets, reporting, and test automation.",
+    accent: "accent-coral",
+    tools: [
+      { name: "Python", Icon: FaPython },
+      { name: "PyTorch", Icon: SiPytorch },
+      { name: "NumPy", Icon: SiNumpy },
+      { name: "Power BI", Icon: SiPowerbi },
+      { name: "Azure", Icon: SiMicrosoftazure },
+      { name: "Selenium", Icon: SiSelenium },
+      { name: "AWS", Icon: FaAws },
+    ],
+  },
 ];
 
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
-      <h2 className="my-20 text-center text-4xl">Technologies</h2>
+    <section id="stack" className="section-pad border-b border-[var(--color-line)]">
+      <div className="section-shell">
+        <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+          <div>
+            <span className="section-kicker">Toolchain</span>
+            <h2 className="section-title">Technology with a job.</h2>
+          </div>
+          <p className="section-copy lg:mt-14">
+            Each tool supports a real workflow: interfaces people use, services that stay online, and AI/data pipelines that add intelligence.
+          </p>
+        </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-4">
-        {tech.map(({ name, Icon, color, duration }) => (
-          <motion.div
-            key={name}
-            variants={iconVariants(duration)}
-            initial="initial"
-            animate="animate"
-            whileHover={{
-              scale: 1.08,
-              y: -6,
-              boxShadow: `0 0 25px ${color}55`,
-            }}
-            transition={{ type: "spring", stiffness: 300, damping: 15 }}
-            className="rounded-2xl border-4 border-neutral-800 p-4 text-center cursor-pointer"
-          >
-            <Icon className="text-7xl" style={{ color }} />
-            <p className="mt-2 text-xl font-semibold text-neutral-300">
-              {name}
-            </p>
-          </motion.div>
-        ))}
+        <div className="mt-12 grid gap-5">
+          {groups.map((group, groupIndex) => (
+            <motion.article
+              key={group.title}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.58, delay: groupIndex * 0.06, ease: [0.16, 1, 0.3, 1] }}
+              className="surface-panel grid gap-6 p-5 lg:grid-cols-[0.42fr_1fr] lg:p-7"
+            >
+              <div>
+                <p className={`text-sm font-black uppercase tracking-[0.16em] ${group.accent}`}>{group.title}</p>
+                <p className="mt-4 max-w-md leading-7 text-muted">{group.copy}</p>
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+                {group.tools.map(({ name, Icon }) => (
+                  <span
+                    key={name}
+                    className="inline-flex min-h-11 items-center gap-2 border border-[var(--color-line)] bg-[oklch(13%_0.04_244_/_0.72)] px-3 py-2 text-sm font-bold text-[var(--color-ink)]"
+                  >
+                    <Icon className={group.accent} size={18} aria-hidden="true" />
+                    {name}
+                  </span>
+                ))}
+              </div>
+            </motion.article>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
